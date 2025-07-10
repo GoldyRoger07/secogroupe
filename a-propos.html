@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            overflow-x: hidden;
+        }
+        h1{
+            padding: 24px;
+            font-size: 2rem;
+            text-align: center;
+            /* animation: reveal linear ;
+            animation-timeline: view();
+            animation-range-start: cover 0%;
+            animation-range-end: contain 50%; */
+        }
+
+        p{
+            
+            animation: slide linear ;
+            animation-timeline: view();
+            animation-range-start: cover 0%;
+            animation-range-end: cover 30%;
+        }
+
+        .fade{
+            animation: fade linear;
+            animation-timeline: view();
+            animation-range-end: cover 50%;
+            animation-range-start: cover 0%;
+            /* animation-range-start: cover 0%;
+            animation-range-end: cover 30%; */
+        }
+
+        .fade-up{
+            animation: fade-up linear;
+            animation-timeline: view();
+            animation-range-end: cover 50%;
+            animation-range-start: cover 0%;
+            /* animation-range-start: cover 0%;
+            animation-range-end: cover 30%; */
+        }
+
+        .fade-up-right{
+            animation: fade-up-right linear;
+            animation-timeline: view();
+            animation-range-end: cover 50%;
+            animation-range-start: cover 0%;
+            /* animation-range-start: contain 0%;
+            animation-range-end: cover 100%; */
+        }
+
+        .fade-up-left{
+            animation: fade-up-left linear;
+            animation-timeline: view();
+            animation-range-end: cover 50%;
+            animation-range-start: cover 0%;
+            /* animation-range-start: cover 0%;
+            animation-range-end: cover 30%; */
+        }
+
+        .fade-down{
+            animation: fade-down linear;
+            animation-timeline: view();
+            animation-range-end: cover 50%;
+            animation-range-start: cover 0%;
+        }
+
+        .fade-right{
+            animation: fade-right linear;
+            animation-timeline: view();
+            animation-range-end: cover 50%;
+            animation-range-start: cover 0%;
+        }
+
+        .fade-left{
+            animation: fade-left linear;
+            animation-timeline: view();
+            animation-range-end: cover 50%;
+            animation-range-start: cover 0%;
+        }
+
+        .fade-zoom{
+            animation: fade-zoom linear;
+            animation-timeline: view();
+            animation-range-end: cover 50%;
+            animation-range-start: cover 0%;
+        }
+
+        @keyframes fade-right {
+            from{
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+            to{
+                transform: translateX(0%);
+                opacity: 1;
+            }
+        }
+
+        @keyframes fade-zoom {
+            from{
+                transform: scale(0.8);
+                opacity: 0;
+            }
+            to{
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        @keyframes fade-up-right {
+            from{
+                transform: translate(-100%,150%);
+                opacity: 0;
+            }
+            to{
+                transform: translate(0%,0%);
+                opacity: 1;
+            }
+        }
+
+        @keyframes fade-up-left {
+            from{
+                transform: translate(100%,150%);
+                opacity: 0;
+            }
+            to{
+                transform: translate(0%,0%);
+                opacity: 1;
+            }
+        }
+
+        @keyframes fade-left {
+            from{
+                transform: translateX(10%);
+                opacity: 0.9;
+            }
+            to{
+                transform: translateX(0%);
+                opacity: 1;
+            }
+        }
+
+        @keyframes fade-up {
+            from{
+                opacity: 0;
+                transform: translateY(100%);
+            }
+            to{
+                opacity: 1;
+                transform: translateY(0%);
+            }   
+        }
+
+        @keyframes fade {
+            from{
+                opacity: 0;
+                /* transform: translateY(100%); */
+            }
+            to{
+                opacity: 1;
+                /* transform: translateY(0%); */
+            }   
+        }
+
+        @keyframes fade-down {
+            from{
+                opacity: 0;
+                transform: translateY(-100%);
+            }
+            to{
+                opacity: 1;
+                transform: translateY(0%);
+            }   
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Scroll Effect (no JS)</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat expedita omnis, nulla quis inventore velit. Natus accusamus aliquid fugit maxime id. Sequi, vero? Doloremque rerum nihil quisquam obcaecati quia. Fuga!</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat expedita omnis, nulla quis inventore velit. Natus accusamus aliquid fugit maxime id. Sequi, vero? Doloremque rerum nihil quisquam obcaecati quia. Fuga!</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat expedita omnis, nulla quis inventore velit. Natus accusamus aliquid fugit maxime id. Sequi, vero? Doloremque rerum nihil quisquam obcaecati quia. Fuga!</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat expedita omnis, nulla quis inventore velit. Natus accusamus aliquid fugit maxime id. Sequi, vero? Doloremque rerum nihil quisquam obcaecati quia. Fuga!</p>
+
+    </div>
+
+    <div>
+        <h1 class="fade-zoom">Scroll Effect (no JS)</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat expedita omnis, nulla quis inventore velit. Natus accusamus aliquid fugit maxime id. Sequi, vero? Doloremque rerum nihil quisquam obcaecati quia. Fuga!</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat expedita omnis, nulla quis inventore velit. Natus accusamus aliquid fugit maxime id. Sequi, vero? Doloremque rerum nihil quisquam obcaecati quia. Fuga!</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat expedita omnis, nulla quis inventore velit. Natus accusamus aliquid fugit maxime id. Sequi, vero? Doloremque rerum nihil quisquam obcaecati quia. Fuga!</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat expedita omnis, nulla quis inventore velit. Natus accusamus aliquid fugit maxime id. Sequi, vero? Doloremque rerum nihil quisquam obcaecati quia. Fuga!</p>
+
+    </div>
+
+    <div>
+        <h1 class="fade-down">Scroll Effect (no JS)</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat expedita omnis, nulla quis inventore velit. Natus accusamus aliquid fugit maxime id. Sequi, vero? Doloremque rerum nihil quisquam obcaecati quia. Fuga!</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat expedita omnis, nulla quis inventore velit. Natus accusamus aliquid fugit maxime id. Sequi, vero? Doloremque rerum nihil quisquam obcaecati quia. Fuga!</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat expedita omnis, nulla quis inventore velit. Natus accusamus aliquid fugit maxime id. Sequi, vero? Doloremque rerum nihil quisquam obcaecati quia. Fuga!</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat expedita omnis, nulla quis inventore velit. Natus accusamus aliquid fugit maxime id. Sequi, vero? Doloremque rerum nihil quisquam obcaecati quia. Fuga!</p>
+
+    </div>
+
+
+    <div>
+        <h1 class="fade-right">Scroll Effect (no JS)</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat expedita omnis, nulla quis inventore velit. Natus accusamus aliquid fugit maxime id. Sequi, vero? Doloremque rerum nihil quisquam obcaecati quia. Fuga!</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat expedita omnis, nulla quis inventore velit. Natus accusamus aliquid fugit maxime id. Sequi, vero? Doloremque rerum nihil quisquam obcaecati quia. Fuga!</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat expedita omnis, nulla quis inventore velit. Natus accusamus aliquid fugit maxime id. Sequi, vero? Doloremque rerum nihil quisquam obcaecati quia. Fuga!</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat expedita omnis, nulla quis inventore velit. Natus accusamus aliquid fugit maxime id. Sequi, vero? Doloremque rerum nihil quisquam obcaecati quia. Fuga!</p>
+
+    </div>
+
+    <div class="fade-left">
+        <h1>Scroll Effect (no JS)</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat expedita omnis, nulla quis inventore velit. Natus accusamus aliquid fugit maxime id. Sequi, vero? Doloremque rerum nihil quisquam obcaecati quia. Fuga!</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat expedita omnis, nulla quis inventore velit. Natus accusamus aliquid fugit maxime id. Sequi, vero? Doloremque rerum nihil quisquam obcaecati quia. Fuga!</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat expedita omnis, nulla quis inventore velit. Natus accusamus aliquid fugit maxime id. Sequi, vero? Doloremque rerum nihil quisquam obcaecati quia. Fuga!</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat expedita omnis, nulla quis inventore velit. Natus accusamus aliquid fugit maxime id. Sequi, vero? Doloremque rerum nihil quisquam obcaecati quia. Fuga!</p>
+
+    </div>
+
+    <div class="fade-up-left">
+        <h1>Scroll Effect (no JS)</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat expedita omnis, nulla quis inventore velit. Natus accusamus aliquid fugit maxime id. Sequi, vero? Doloremque rerum nihil quisquam obcaecati quia. Fuga!</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat expedita omnis, nulla quis inventore velit. Natus accusamus aliquid fugit maxime id. Sequi, vero? Doloremque rerum nihil quisquam obcaecati quia. Fuga!</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat expedita omnis, nulla quis inventore velit. Natus accusamus aliquid fugit maxime id. Sequi, vero? Doloremque rerum nihil quisquam obcaecati quia. Fuga!</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat expedita omnis, nulla quis inventore velit. Natus accusamus aliquid fugit maxime id. Sequi, vero? Doloremque rerum nihil quisquam obcaecati quia. Fuga!</p>
+
+    </div>
+
+    <div class="fade-up-right">
+        <h1>Scroll Effect (no JS)</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat expedita omnis, nulla quis inventore velit. Natus accusamus aliquid fugit maxime id. Sequi, vero? Doloremque rerum nihil quisquam obcaecati quia. Fuga!</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat expedita omnis, nulla quis inventore velit. Natus accusamus aliquid fugit maxime id. Sequi, vero? Doloremque rerum nihil quisquam obcaecati quia. Fuga!</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat expedita omnis, nulla quis inventore velit. Natus accusamus aliquid fugit maxime id. Sequi, vero? Doloremque rerum nihil quisquam obcaecati quia. Fuga!</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat expedita omnis, nulla quis inventore velit. Natus accusamus aliquid fugit maxime id. Sequi, vero? Doloremque rerum nihil quisquam obcaecati quia. Fuga!</p>
+
+    </div>
+
+    <div class="fade-up-left">
+        <h1>Scroll Effect (no JS)</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat expedita omnis, nulla quis inventore velit. Natus accusamus aliquid fugit maxime id. Sequi, vero? Doloremque rerum nihil quisquam obcaecati quia. Fuga!</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat expedita omnis, nulla quis inventore velit. Natus accusamus aliquid fugit maxime id. Sequi, vero? Doloremque rerum nihil quisquam obcaecati quia. Fuga!</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat expedita omnis, nulla quis inventore velit. Natus accusamus aliquid fugit maxime id. Sequi, vero? Doloremque rerum nihil quisquam obcaecati quia. Fuga!</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat expedita omnis, nulla quis inventore velit. Natus accusamus aliquid fugit maxime id. Sequi, vero? Doloremque rerum nihil quisquam obcaecati quia. Fuga!</p>
+
+    </div>
+
+    <div class="fade">
+        <h1>Scroll Effect (no JS)</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat expedita omnis, nulla quis inventore velit. Natus accusamus aliquid fugit maxime id. Sequi, vero? Doloremque rerum nihil quisquam obcaecati quia. Fuga!</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat expedita omnis, nulla quis inventore velit. Natus accusamus aliquid fugit maxime id. Sequi, vero? Doloremque rerum nihil quisquam obcaecati quia. Fuga!</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat expedita omnis, nulla quis inventore velit. Natus accusamus aliquid fugit maxime id. Sequi, vero? Doloremque rerum nihil quisquam obcaecati quia. Fuga!</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat expedita omnis, nulla quis inventore velit. Natus accusamus aliquid fugit maxime id. Sequi, vero? Doloremque rerum nihil quisquam obcaecati quia. Fuga!</p>
+
+    </div>
+
+    <div class="fade-up">
+        <h1>Scroll Effect (no JS)</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat expedita omnis, nulla quis inventore velit. Natus accusamus aliquid fugit maxime id. Sequi, vero? Doloremque rerum nihil quisquam obcaecati quia. Fuga!</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat expedita omnis, nulla quis inventore velit. Natus accusamus aliquid fugit maxime id. Sequi, vero? Doloremque rerum nihil quisquam obcaecati quia. Fuga!</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat expedita omnis, nulla quis inventore velit. Natus accusamus aliquid fugit maxime id. Sequi, vero? Doloremque rerum nihil quisquam obcaecati quia. Fuga!</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat expedita omnis, nulla quis inventore velit. Natus accusamus aliquid fugit maxime id. Sequi, vero? Doloremque rerum nihil quisquam obcaecati quia. Fuga!</p>
+
+    </div>
+</body>
+</html>

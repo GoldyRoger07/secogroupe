@@ -6,7 +6,9 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- <link rel="stylesheet" crossorigin href="css/index.css"> -->
     <link rel="stylesheet" href="css/style.css">
-       <!-- <style>
+    <link rel="stylesheet" href="css/aos.css">
+
+    <!-- <style>
         body {
   background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
    background: linear-gradient(-45deg, #dfd4d4, #dfddd4, rgb(152, 155, 149), #d4d5df);
@@ -27,11 +29,11 @@
 </head>
 <body>
         
-    <header>
+    <header id="home">
       <div class="hider">
-          <nav class=" navbar navbar-expand-lg">
+          <nav class="navbar navbar-expand-xl">
           <div class="container">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="#home">
                 <img class="my-logo" src="img/logo1.avif" alt="logo">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -39,21 +41,31 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">Accueil</a>
+                <li class="nav-item wrapper-link">
+                  <a class="nav-link active links-animation" aria-current="page" href="#home">
+                    <i class="fa-solid fa-house"></i> Accueil
+                  </a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#nos-avantages">Avantages</a>
+                <li class="nav-item wrapper-link">
+                  <a class="nav-link links-animation" href="#nos-avantages">
+                    <i class="fa-solid fa-square-plus"></i> Avantages</a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#a-propos">À propos</a>
+                <li class="nav-item wrapper-link">
+                  <a class="nav-link links-animation" href="#a-propos">
+                    <i class="fa-solid fa-circle-question"></i> À propos</a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#nos-projets">Nos Projets</a>
+                <li class="nav-item wrapper-link">
+                  <a class="nav-link links-animation " href="#nos-projets">
+                    <i class="fa-solid fa-folder"></i> Nos Projets</a>
+                </li>
+                <li class="nav-item wrapper-link">
+                  <a class="nav-link links-animation" href="#contact">
+                    <i class="fa-solid fa-phone"></i> Contact
+                  </a>
                 </li>
                 <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Services
+                    <i class="fa-solid fa-share-nodes"></i> Services
                   </a>
                   <ul class="dropdown-menu">
                     <li><a class="dropdown-item" href="#">Action</a></li>
@@ -64,7 +76,7 @@
                 </li>
                 <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Seco Groupe
+                    <i class="fa-solid fa-people-group"></i> Seco Groupe
                   </a>
                   <ul class="dropdown-menu">
                     <li><a class="dropdown-item" href="#">Fondation Nestor</a></li>
@@ -73,9 +85,7 @@
                     <li><a class="dropdown-item" href="#">Something else here</a></li>
                   </ul>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#contact">Contact</a>
-                </li>
+                
                 <!-- <li class="nav-item">
                   <a class="nav-link disabled" aria-disabled="true">Disabled</a>
                 </li> -->
@@ -87,10 +97,14 @@
       </div>
         
         <div class="container hero-box">
-            <div class="text-box" data-aos="zoom-in-right" data-aos-offset="300"
-     data-aos-easing="ease-in-sine" data-aos-duration="1500">
+            <div class="text-box" data-aos="zoom-in-right" 
+                data-aos-easing="ease-in-sine" data-aos-duration="1500">
               <h1>Welcome To Seco Groupe</h1>
               <p>Des solutions sur mesure pour vos divers besoins</p>
+              <a href="#" class="p-3 btn btn-outline-primary" id="cta-icon">
+                    <i  class="fa-solid fa-phone text-primary"></i>
+                    Contactez nous des maintenant
+              </a>
             </div>
             <img data-aos="fade-down" data-aos-offset="300" data-aos-duration="1500"
      data-aos-easing="ease-in-sine" src="img/image.jpg" alt="hero">
@@ -101,27 +115,24 @@
     <section id="nos-avantages" >
       <div class="box-color"></div>
       <div class="container section-box">
-        <div class="titre-section">Nos Avantages</div>
+        <div class="titre-section fade-down" >Nos Avantages</div>
 
         <div class="cards">
-            <div class="my-card" data-aos="fade-down" 
-     data-aos-easing="ease-in-sine">
+            <div class="my-card fade-up" >
                   <div class="title">
                       Excellence Dans Les Services
                   </div>
                   <p>Chez SECO GROUPE, nous sommes fiers d'offrir l'excellence dans chacun de nos services. De la sécurité à la technologie, de la logistique à la construction et à la transformation agricole, nous accordons une grande importance aux détails et nous engageons à réussir du premier coup.</p>
             </div>
 
-            <div class="my-card" data-aos="fade-up" data-aos-offset="300"
-     data-aos-easing="ease-in-sine">
+            <div class="my-card fade-up" >
                   <div class="title">
                       Satisfaction Client
                   </div>
                   <p >La satisfaction de nos clients est notre priorité absolue. Nous nous efforçons continuellement de dépasser leurs attentes en leur offrant des services exceptionnels, des solutions fiables et un engagement positif à chaque interaction.</p>
             </div>
-
-            <div class="my-card" data-aos="fade-down" data-aos-offset="300"
-     data-aos-easing="ease-in-sine" data-aos-anchor-placement="top-bottom">
+            <!-- data-aos-anchor-placement="top-bottom" -->
+            <div class="my-card fade-up" >
                   <div class="title">
                       Assistance 24H/24
                   </div>
@@ -136,26 +147,26 @@
     <section  class="section-full-h" id="a-propos">
       <div class="cover">
         <div class="container">
-        <div class="titre-section" data-aos="fade-down" data-aos-offset="300"
+        <div class="titre-section" data-aos="fade-down" data-aos-duration="1000"
      data-aos-easing="ease-in-sine">
           À Propos De SECO GROUPE
         </div>
 
-        <p data-aos="fade-down" data-aos-offset="300"
+        <p data-aos="fade-down" data-aos-duration="1000"
      data-aos-easing="ease-in-sine">
           Depuis sa création en 2010 en Louisiane, SECO GROUPE, dirigé par l’entrepreneur et philanthrope Michelet Nestor, a connu une croissance constante, élargissant ses activités aux États-Unis et en Haïti. En tant que groupe haïtien regroupant plusieurs filiales, SECO GROUPE propose une gamme variée de services à travers ses sept entités : SECO Sécurité, Seco Tech, Seco Distributors, Seco Univers Construction, SECO Line, Mass International et Seco Agro-Industries.
         </p>
-        <p data-aos="fade-down" data-aos-offset="300"
+        <p data-aos="fade-down" data-aos-duration="1000"
      data-aos-easing="ease-in-sine">
           Sous la direction de Michelet Nestor, SECO GROUPE ne se limite pas à offrir des services de haute qualité dans des domaines tels que la sécurité, la logistique, la construction, la transformation agricole et la technologie. Michelet Nestor s’engage également à soutenir le développement économique et social en Haïti à travers des initiatives concrètes. En plus de créer des emplois pour des milliers d’Haïtiens dans un contexte économique difficile, où de nombreuses entreprises ferment leurs portes, SECO GROUPE permet à des entreprises locales de bénéficier de solutions adaptées et de maintenir leur compétitivité.
         </p>
 
-        <p data-aos="fade-down" data-aos-offset="300"
+        <p data-aos="fade-down" data-aos-duration="1000"
      data-aos-easing="ease-in-sine">
           Michelet Nestor incarne son engagement philanthropique au travers de la Fondation Nestor, qui œuvre pour améliorer les conditions de vie des communautés en Haïti. La Fondation Nestor soutient divers projets d’éducation, de santé, et de développement communautaire, contribuant ainsi à offrir un avenir meilleur aux familles haïtiennes et à renforcer la résilience de la population face aux défis socio-économiques.
         </p>
 
-        <p data-aos="fade-down" data-aos-offset="300"
+        <p data-aos="fade-down" data-aos-duration="1000"
      data-aos-easing="ease-in-sine">
           Grâce à l’expertise de plus de 500 employés dévoués et à une direction cumulant plus de 30 ans d’expérience, SECO GROUPE et la Fondation Nestor s’allient pour promouvoir la prospérité en Haïti et améliorer la vie de ses habitants.
         </p>
@@ -165,63 +176,103 @@
 
     <section id="nos-services">
         <div class="container">
-          <div class="titre-section">
+          <div class="titre-section" data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-duration="800">
             Nos Services
           </div>
+<!-- zoom-in-up -->
+          <div class="my-cards">
+            <div class="card" style="width: 18rem;" data-aos="zoom-in-up" data-aos-easing="ease-in-sine" data-aos-duration="1100">
+              <div class="card-img-wrapper">
+                  <img  src="img/image8.jpg" class="card-img-top zoom" alt="...">
 
-          <div class="cards">
-            <div class="card" style="width: 18rem;">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Solutions de Surveillance et de Sécurité</h5>
+                <p class="card-text">SECO Sécurité, en tant que sous-division de SECO Groupe, est une société de services dédiée à fournir des agents de sécurité...</p>
+                <a href="#" class="btn btn-primary">Voir plus</a>
+              </div>
+            </div>
+            <!-- <div class="card" style="width: 18rem;">
                 <div class="card-body">
                   <h5 class="card-title">Services d’installation et de maintenance</h5>
-                  <!-- <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
-                  <p class="card-text">Services d’installation et de maintenance</p> -->
-                  
+                                    
                 </div>
+            </div> -->
+
+            <div class="card" style="width: 18rem;" data-aos="zoom-in-up" data-aos-easing="ease-in-sine" data-aos-duration="1000">
+              <div class="card-img-wrapper">
+                  <img  src="img/image4.jpeg" class="card-img-top zoom" alt="...">
+
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Services d’installation et de maintenance</h5>
+                <p class="card-text">SECO Univers Construction est une entreprise spécialisée dans les travaux de construction, couvrant les domaine...</p>
+                <a href="#" class="btn btn-primary">Voir plus</a>
+              </div>
             </div>
 
-            <div class="card" style="width: 18rem;">
+            <div class="card" style="width: 18rem;" data-aos="zoom-in-up" data-aos-easing="ease-in-sine" data-aos-duration="900">
+              <div class="card-img-wrapper">
+                  <img  src="img/image5.jpeg" class="card-img-top zoom" alt="...">
+
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Installation, Maintenance et Réparation Industrielle</h5>
+                <p class="card-text">SECO Sécurité, en tant que sous-division de SECO Groupe, est une société de services dédiée à fournir des agents de sécurité...</p>
+                <a href="#" class="btn btn-primary">Voir plus</a>
+              </div>
+            </div>
+
+            <div class="card" style="width: 18rem;" data-aos="zoom-in-up" data-aos-easing="ease-in-sine" data-aos-duration="700">
+              <div class="card-img-wrapper">
+                  <img  src="img/image6.jpeg" class="card-img-top zoom" alt="...">
+
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Solutions techniques adaptées et performantes</h5>
+                <p class="card-text">SECO Sécurité, en tant que sous-division de SECO Groupe, est une société de services dédiée à fournir des agents de sécurité...</p>
+                <a href="#" class="btn btn-primary">Voir plus</a>
+              </div>
+            </div>
+
+            
+
+            <!-- <div class="card" style="width: 18rem;">
                 <div class="card-body">
                   <h5 class="card-title">Installation, Maintenance et Réparation Industrielle</h5>
-                  <!-- <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
-                  <p class="card-text">Services d’installation et de maintenance</p> -->
-                  
-                </div>
-            </div>
 
-            <div class="card" style="width: 18rem;">
+                </div>
+            </div> -->
+
+            <!-- <div class="card" style="width: 18rem;">
                 <div class="card-body">
                   <h5 class="card-title">Solutions techniques adaptées et performantes</h5>
-                  <!-- <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
-                  <p class="card-text">Services d’installation et de maintenance</p> -->
-                  
                 </div>
-            </div>
+            </div> -->
 
-            <div class="card" style="width: 18rem;">
+            <!-- <div class="card" style="width: 18rem;">
                 <div class="card-body">
                   <h5 class="card-title">Solutions de Surveillance et de Sécurité</h5>
-                  <!-- <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
-                  <p class="card-text">Services d’installation et de maintenance</p> -->
-                  
                 </div>
-            </div>
+            </div> -->
 
-            <div class="card" style="width: 18rem;">
+            <!-- <div class="card" style="width: 18rem;">
                 <div class="card-body">
                   <h5 class="card-title">SECO Distributors – Une filiale de SECO Groupe</h5>
-                  <!-- <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
-                  <p class="card-text">Services d’installation et de maintenance</p> -->
-                  
-                </div>
-            </div>
 
-            <div class="card" style="width: 18rem;">
-                <div class="card-body">
-                  <h5 class="card-title">Services Distribution</h5>
-                  <!-- <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
-                  <p class="card-text">Services d’installation et de maintenance</p> -->
-                  
                 </div>
+            </div> -->
+
+            <div class="card" style="width: 18rem;" data-aos="zoom-in-up" data-aos-easing="ease-in-sine" data-aos-duration="400">
+              <div class="card-img-wrapper">
+                  <img  src="img/image7.jpeg" class="card-img-top zoom" alt="...">
+
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">SECO Distributors – Une filiale de SECO Groupe</h5>
+                <p class="card-text">SECO Sécurité, en tant que sous-division de SECO Groupe, est une société de services dédiée à fournir des agents de sécurité...</p>
+                <a href="#" class="btn btn-primary">Voir plus</a>
+              </div>
             </div>
 
             
@@ -292,9 +343,15 @@
     </section>
       
     <section id="contact">
-        <div class="container">
+      <div class="container">
               <div class="titre-section">Contact</div>
         
+              <!-- <div class="boxes">
+                  <div class="b1">
+                    
+                  </div>
+
+              </div> -->
               <form>
                <div class="row">
                 <div class="col">
@@ -303,28 +360,159 @@
                       <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Doe">
                     </div>
                 
-                </div>
-                <div class="col">
-                    <div class="mb-3">
-                      <label for="exampleFormControlInput2" class="form-label">Prenom</label>
-                      <input type="text" class="form-control" id="exampleFormControlInput2" placeholder="John">
                     </div>
-                </div>
-               </div>
-                <div class="mb-3">
-                  <label for="exampleFormControlInput3" class="form-label">Email address</label>
-                  <input type="email" class="form-control" id="exampleFormControlInput3" placeholder="name@example.com">
-                </div>
-                <div class="mb-3">
-                  <label for="exampleFormControlTextarea4" class="form-label">Message</label>
-                  <textarea class="form-control" id="exampleFormControlTextarea4" rows="3"></textarea>
-                </div>
-                <button class="btn btn-primary">Envoyer</button>
-              </form>
-        </div>
+                      <div class="col">
+                          <div class="mb-3">
+                            <label for="exampleFormControlInput2" class="form-label">Prenom</label>
+                            <input type="text" class="form-control" id="exampleFormControlInput2" placeholder="John">
+                          </div>
+                      </div>
+                    </div>
+                      <div class="mb-3">
+                        <label for="exampleFormControlInput3" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput3" placeholder="name@example.com">
+                      </div>
+                      <div class="mb-3">
+                        <label for="exampleFormControlTextarea4" class="form-label">Message</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea4" rows="3"></textarea>
+                      </div>
+                      <button class="btn btn-primary">Envoyer</button>
+                    </form>
+             
+              
+            </div>
+        
 
     </section>
 
+    <footer >
+      <div class="container" data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-duration="800">
+            <div class="box-1">
+                
+                <div class="intro">
+                  <img class="my-logo" src="img/logo1.avif" alt="logo">
+
+                  <p>Des solutions sur mesure pour vos divers besoins</p>
+
+                  <a href="#" class="btn btn-primary">
+                    <i class="fa-solid fa-phone"></i>
+                    Appelez nous maintenant
+                  </a>
+                </div>
+               <div class="links-wrapper">
+                   <div class="links">
+                  <span>Liens Rapides</span>
+                  <div class="wrapper-link">
+                        <a href="#" class="links-animation">
+                            <i class="fa-solid fa-square-plus"></i> Avantages
+                        </a>
+                  </div>
+                  <div class="wrapper-link">
+                        <a href="#" class="links-animation">
+                          <i class="fa-solid fa-circle-question"></i> À propos
+                        </a>
+                  </div>
+
+                  <div class="wrapper-link">
+                        <a href="#" class="links-animation">
+                              
+                          <i class="fa-solid fa-folder"></i> Nos Projets
+                        </a>
+                  </div>
+                  <div>
+
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fa-solid fa-share-nodes"></i>  Services
+                      </a>
+                      <ul class="dropdown-menu">
+                                  <li><a class="dropdown-item" href="#">Action</a></li>
+                                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                                  <li><hr class="dropdown-divider"></li>
+                                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      </ul>
+                  </div>
+
+                  <div>
+                      
+                        <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          <i class="fa-solid fa-people-group"></i> Seco Groupe
+                        </a>
+                      
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Fondation Nestor</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                          </ul>
+                  </div>
+                    <div class="wrapper-link">
+                        <a href="#" class="links-animation">
+                              
+                          <i class="fa-solid fa-phone"></i> Contact
+                        </a>
+                    </div>
+                </div>
+
+                <div class="links">
+                  <span>Suivez Nous</span>
+
+                  <div class="wrapper-link">
+                        <a href="#" class="links-animation">
+                            <i class="fa-brands fa-square-facebook"></i> Facebook
+                        </a>
+                  </div>
+                  
+                  <div class="wrapper-link">
+                        <a href="#" class="links-animation">
+                          <i class="fa-brands fa-instagram"></i> Instagram
+                        </a>
+                  </div>
+
+                  <div class="wrapper-link">
+                        <a href="#" class="links-animation">
+                              
+                          <i class="fa-brands fa-linkedin"></i> LinkedIn
+                        </a>
+                  </div>
+
+                  <div class="wrapper-link">
+                        <a href="#" class="links-animation">
+                              
+                          <i class="fa-brands fa-youtube"></i> YouTube
+                        </a>
+                  </div>
+                </div>
+
+                <div class="links">
+                    <span>Aide</span>
+                    <div class="wrapper-link">
+                        <a href="#" class="links-animation">
+                          <i class="fa-solid fa-envelope"></i>
+                          hr@secogroupe.com 
+                        </a>
+                    </div>
+                    <div class="wrapper-link">
+                        <a href="#" class="links-animation"> 
+                          <i class="fa-solid fa-phone"></i>
+                          +509 2940 0349 / 2940 0339
+                        </a>
+                    </div>
+                    <div class="wrapper-link">
+                        <a href="#" class="links-animation">
+                              
+                          <i class="fa-solid fa-location-dot"></i>
+                          Rue Borno #12 Bis, Pv-Haiti
+                        </a>
+                    </div>
+                </div>
+               </div>
+            </div>
+            <div class="box-2">
+              © 2025 <span class="company-title" > SECO GROUPE</span>. Tous droits réservés.
+            </div>
+      </div>
+      
+    </footer>
       <!-- <section class="hero">
           <div class="container">
               <div class="row">
@@ -347,34 +535,8 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      AOS.init();
-
-      const body = document.body
-      const hider = document.querySelector(".hider")
-
-      let lastScroll = 0
-
-      window.addEventListener('scroll',()=>{
-          let currentScroll = window.pageYOffset
-
-          if(currentScroll<= 0){
-              hider.classList.remove("scroll-up")
-          }
-
-          if(currentScroll > lastScroll && !hider.classList.contains("scroll-down")){
-            hider.classList.remove("scroll-up")
-            hider.classList.add("scroll-down")
-          }
-
-          if(currentScroll < lastScroll && hider.classList.contains("scroll-down")){
-            hider.classList.add("scroll-up")
-            hider.classList.remove("scroll-down")
-          }
-          lastScroll = currentScroll
-
-
-      })
-    </script>
+    <script src="https://kit.fontawesome.com/a2c421da17.js" crossorigin="anonymous"></script>
+    <script src="js/app.js"></script>
+  
 </body>
 </html>

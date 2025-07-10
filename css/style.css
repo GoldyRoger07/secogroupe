@@ -22,13 +22,16 @@ header{
     display: flex;
     flex-direction: column;
     justify-content: start;
-    background-color: #deeefd;
+    /* background-color: #deeefd; */
+    /* background-image: radial-gradient(ellipse at 0% 0%,#fafafa,#5fb1ff); */
+    background-image: linear-gradient(to right,#fafafa,#5fb1ff);
     padding-top: 120px;
     /* background: rgb(230, 230, 230); */
 }
 
 .box-color{
-    background-color: #deeefd;
+    /* background-color: #deeefd; */
+    background-image: linear-gradient(to right,#fafafa,#5fb1ff);
     width: 100%;
     height: 200px;
 }
@@ -47,11 +50,12 @@ section{
 .section-box{
     border-radius: 20px;
     background: #fff;
-    transform: translateY(-40%);
+    transform: translateY(-20%);
     padding: 40px 80px;
     /* padd */
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
+
 
 .titre-section{
     font-size: 50px;
@@ -94,8 +98,9 @@ section{
 
 .cards{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    gap: 10px;
+    gap: 20px;
     
 }
 
@@ -131,18 +136,23 @@ section{
 
 }
 
+#nos-projets{
+    background-image: url('../img/bg.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 #nos-avantages .titre-section{
     margin-left: 50px;
 }
 
 #nos-services{
-    background-image: url('../img/bg.jpg');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+   
     /* height: 100dvh; */
     display: flex;
     flex-wrap: wrap;
+    padding: 20px 0;
 
 }
 
@@ -156,7 +166,8 @@ section{
     display: flex;
     flex-direction: column;
     gap: 10px;
-    max-width: 300px;
+    width: 100%;
+
 }
 
 .my-card .title{
@@ -178,6 +189,9 @@ section{
 #contact{
     height: 100dvh;
     padding: 20px 0px;
+    position: relative;
+    overflow: hidden;
+    /* background-image: linear-gradient(to right,#fff,#ff9); */
 }
 
 .sticky{
@@ -193,10 +207,10 @@ section{
     top:0;
     width: 100%;
     left: 50%;
+    
     background: rgba(255, 255, 255, 0.12);
-    backdrop-filter: blur(12.2px);
-    -webkit-backdrop-filter: blur(12.2px);
-
+    backdrop-filter: blur(18.2px);
+    -webkit-backdrop-filter: blur(18.2px);
     transform: translate3d(-50%,0,0);
     /* transform: tr; */
     transition: all 600ms ease-in-out;
@@ -206,10 +220,13 @@ section{
 .hider.scroll-up{
     width: 85%;
     left: 50%;
-    
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
         /* From https://css.glass */
 
-border-radius: 16px;
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(18.2px);
+    -webkit-backdrop-filter: blur(18.2px);
+    border-radius: 16px;
 /* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); */
 /* border: 1px solid rgba(255, 255, 255, 0.3); */
 
@@ -221,14 +238,342 @@ border-radius: 16px;
     transform: translate3d(-50%,-100%,0);
     width: 85%;
     left: 50%;
-
     background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(18.2px);
+    -webkit-backdrop-filter: blur(18.2px);
+    /* background: rgba(255, 255, 255, 0.12); */
     border-radius: 16px;
     /* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); */
-    backdrop-filter: blur(12.2px);
-    -webkit-backdrop-filter: blur(12.2px);
+    /* backdrop-filter: blur(12.2px);
+    -webkit-backdrop-filter: blur(12.2px); */
 
 }
 
+
+footer{
+    /* background-color: #92caff; */
+    background-color: #5fb1ff;
+    padding: 20px 0;
+    
+}
+
+footer .my-logo{
+    width: 150px;
+}
+
+footer p{
+    color: #fff;
+    /* font-weight: bold; */
+}
+
+ footer .container{
+    display: flex;
+    flex-direction: column;
+}
+
+footer .box-1{
+    /* background: #000; */
+    display: flex;
+    /* align-items: center; */
+    gap: 20px;
+    /* justify-content: space-between; */
+    width: 100%;
+    padding-bottom: 15px;
+}
+
+footer .box-1 .links-wrapper{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+footer .box-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    padding-top: 15px;
+    border-top: 1px solid #e0e0e0;
+}
+
+
+
+footer .box-1 .links,footer .box-1 .locations{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    
+}
+
+footer .box-1 .links i,
+footer .box-1 .locations i{
+    color: #ffffff ;
+}
+
+footer .box-1 .links a,
+footer .box-1 .locations a{
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+
+}
+
+li a{
+    display: flex !important;
+    align-items: center !important;
+    gap: 10px !important;
+}
+
+li{
+    margin-right: 5px;
+}
+
+
+footer span{
+    font-weight: bold;
+    color: #ffffff ;
+}
+
+footer .box-2{
+    /* background: red; */
+}
+
+.company-title{
+    color: rgb(0, 122, 192);
+    margin-left: 5px;
+}
+
+
+.btn i{
+    color: #fff;
+    margin-right: 5px;
+}
+
+.navbar-nav{
+    transition: all ease-in-out 500ms !important; 
+}
+
+.wrapper-link{
+    position: relative;
+    width: auto;
+}
+
+.dropdown-item{
+    color: #4e4e4e !important;
+    
+}
+
+.dropdown-menu li{
+    margin-right: 0px;
+} 
+
+.wrapper-link .links-animation::after{
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 100%;
+    background-color:#fff;
+    left: 0;
+    bottom: 0;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease;
+
+}
+
+li.wrapper-link .links-animation::after{
+    background-color:#4e4e4e;
+}
+
+.wrapper-link:hover .links-animation::after{
+    transform-origin: left;
+    transform: scaleX(1);
+    font-weight: bold;
+
+}
+
+.my-cards{
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    overflow-x: auto;
+    padding-left: 5px;
+    padding-bottom: 5px;
+    /* flex-wrap: wrap; */
+}
+
+.my-cards::-webkit-scrollbar{
+    display: none;
+}
+
+.my-cards .card{
+    min-width: 280px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    border: none !important;
+    overflow: hidden;
+}
+
+.zoom{
+    transform: scale(1);
+    transition: transform ease-in-out 700ms;
+    /* object-position: center;
+    object-fit: cover; */
+}
+
+.my-cards .card:hover .zoom{
+    transform: scale(1.2);
+    /* width: 100%; */
+    
+}
+
+.card-img-wrapper{
+    width: 100%;
+    overflow: hidden;
+}
+
+
+#cta-icon:hover i.text-primary{
+    color: #fff !important;
+    /* background: #fff; */
+    /* font-size: 30px; */
+}
+
+form{
+    /* background-image: linear-gradient(to right,#fff,transparent); */
+}
+
+.ceo-wrapper-img{
+    height: 100%;
+    background-image: linear-gradient(to left,#fff);
+}
+
+.bgs{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    position: absolute;
+    display: flex;
+    z-index: 1;
+}
+
+.bg1,.bg2{
+    /* width: 50%; */
+    height: 100%;
+
+}
+
+.bg1{
+    width: 60%;
+}
+
+.bg2{
+    background-image: url('../img/image-ceo.avif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 40%;
+}
+
+#contact .wrapper{
+    position: absolute;
+    left: 0;
+    top:0;
+    right:0;
+    bottom: 0;
+    z-index: 3;
+    width: 100%;
+    /* background: violet; */
+}
+
+/* #contact .overlay{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+    height: 100%;
+    background-image: linear-gradient(to right,#fff 80%,transparent);
+    z-index: 2;
+} */
+
+
+
+
+/* @media (min-width: 701px) {
+  .navbar .navbar-collapse {
+    display: flex !important;
+    flex-basis: auto;
+  }
+
+  .navbar .navbar-toggler {
+    display: none;
+  }
+} */
+
+@media (min-width: 1200px) {
+    .section-box{
+        transform: translateY(-40%);
+    }
+}
+
+@media (min-width: 1018px) {
+    .cards{
+        /* display: flex; */
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 10px;
+        
+    }
+
+    .my-card{
+        max-width: 300px;
+    }
+
+    
+}
+
+
+@media (max-width: 995px) {
+    .hero-box{
+        /* display: flex; */
+        flex-direction: column;
+    }
+
+    .hero-box .text-box{
+        width: 100%;
+        text-align: center;
+    }
+    .hero-box img{
+        display: none;
+    }
+
+    footer .box-1{
+        flex-direction: column;
+    }
+ 
+}
+
+@media (max-width: 645px) {
+    .hero-box .text-box h1{
+        font-size: 8vw;
+    }
+
+    .titre-section{
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 550px) {
+    footer .box-1 .links-wrapper{
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .my-logo{
+        width: 60px;
+    }
+}
 
 
