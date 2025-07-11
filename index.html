@@ -31,35 +31,35 @@
         
     <header id="home">
       <div class="hider">
-          <nav class="navbar navbar-expand-xl">
+          <nav class="navbar navbar-expand-xl" data-menu-status="close" id="nav">
           <div class="container">
             <a class="navbar-brand" href="#home">
                 <img class="my-logo" src="img/logo1.avif" alt="logo">
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button id="menuBtn" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                 <li class="nav-item wrapper-link">
-                  <a class="nav-link active links-animation" aria-current="page" href="#home">
+                  <a class="nav-link active links-animation" onclick="onClickLink()" aria-current="page" href="#home">
                     <i class="fa-solid fa-house"></i> Accueil
                   </a>
                 </li>
                 <li class="nav-item wrapper-link">
-                  <a class="nav-link links-animation" href="#nos-avantages">
+                  <a class="nav-link links-animation" onclick="onClickLink()" href="#nos-avantages">
                     <i class="fa-solid fa-square-plus"></i> Avantages</a>
                 </li>
                 <li class="nav-item wrapper-link">
-                  <a class="nav-link links-animation" href="#a-propos">
+                  <a class="nav-link links-animation" onclick="onClickLink()" href="#a-propos">
                     <i class="fa-solid fa-circle-question"></i> À propos</a>
                 </li>
                 <li class="nav-item wrapper-link">
-                  <a class="nav-link links-animation " href="#nos-projets">
+                  <a class="nav-link links-animation" onclick="onClickLink()" href="#nos-projets">
                     <i class="fa-solid fa-folder"></i> Nos Projets</a>
                 </li>
                 <li class="nav-item wrapper-link">
-                  <a class="nav-link links-animation" href="#contact">
+                  <a class="nav-link links-animation" onclick="onClickLink()" href="#contact">
                     <i class="fa-solid fa-phone"></i> Contact
                   </a>
                 </li>
@@ -97,8 +97,8 @@
       </div>
         
         <div class="container hero-box">
-            <div class="text-box" data-aos="zoom-in-right" 
-                data-aos-easing="ease-in-sine" data-aos-duration="1500">
+            <div class="text-box" data-aos="fade-down" 
+                data-aos-easing="ease-in-sine" data-aos-duration="1000">
               <h1>Welcome To Seco Groupe</h1>
               <p>Des solutions sur mesure pour vos divers besoins</p>
               <a href="#" class="p-3 btn btn-outline-primary" id="cta-icon">
@@ -106,7 +106,7 @@
                     Contactez nous des maintenant
               </a>
             </div>
-            <img data-aos="fade-down" data-aos-offset="300" data-aos-duration="1500"
+            <img data-aos="fade-down" data-aos-offset="300" data-aos-duration="1000"
      data-aos-easing="ease-in-sine" src="img/image.jpg" alt="hero">
         </div>
         <!-- <img src="img/2.png" class="wave" alt="wave"> -->
@@ -345,7 +345,8 @@
     <section id="contact">
       <div class="container">
               <div class="titre-section">Contact</div>
-        
+              <h3>Une question, un projet ou besoin d’assistance ?</h3>
+              <p>Contactez-nous, nous vous répondrons dans les plus brefs délais.</p>
               <!-- <div class="boxes">
                   <div class="b1">
                     
@@ -386,7 +387,7 @@
     </section>
 
     <footer >
-      <div class="container" data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-duration="800">
+      <div class="container" >
             <div class="box-1">
                 
                 <div class="intro">
@@ -400,7 +401,7 @@
                   </a>
                 </div>
                <div class="links-wrapper">
-                   <div class="links">
+                   <div class="links" data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-duration="800">
                   <span>Liens Rapides</span>
                   <div class="wrapper-link">
                         <a href="#" class="links-animation">
@@ -453,7 +454,7 @@
                     </div>
                 </div>
 
-                <div class="links">
+                <div class="links" data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-duration="800">
                   <span>Suivez Nous</span>
 
                   <div class="wrapper-link">
@@ -483,7 +484,7 @@
                   </div>
                 </div>
 
-                <div class="links">
+                <div class="links" data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-duration="800">
                     <span>Aide</span>
                     <div class="wrapper-link">
                         <a href="#" class="links-animation">

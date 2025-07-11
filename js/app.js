@@ -2,6 +2,8 @@ AOS.init();
 
       const body = document.body
       const hider = document.querySelector(".hider")
+      const nav = document.querySelector("#nav")
+      const menuBtn = document.querySelector("#menuBtn")
 
       let lastScroll = 0
 
@@ -25,3 +27,23 @@ AOS.init();
 
 
       })
+
+
+      function onClickLink(){
+          const menuStatus = nav.getAttribute('data-menu-status')
+
+          if(menuStatus === 'open')
+            menuBtn.click()
+          
+
+            
+      }
+
+      menuBtn.addEventListener('click',()=>{
+        const menuStatus = nav.getAttribute('data-menu-status')
+        if(menuStatus === 'close')
+          nav.setAttribute('data-menu-status','open')
+        else
+          nav.setAttribute('data-menu-status','close')
+      })
+
