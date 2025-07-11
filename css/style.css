@@ -207,10 +207,10 @@ section{
     top:0;
     width: 100%;
     left: 50%;
-    
-    background: rgba(255, 255, 255, 0.12);
+    background-image: linear-gradient(to right,#fafafa,#5fb1ff);
+    /* background: rgba(255, 255, 255, 0.12);
     backdrop-filter: blur(18.2px);
-    -webkit-backdrop-filter: blur(18.2px);
+    -webkit-backdrop-filter: blur(18.2px); */
     transform: translate3d(-50%,0,0);
     /* transform: tr; */
     transition: all 600ms ease-in-out;
@@ -223,11 +223,11 @@ section{
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
         /* From https://css.glass */
 
-    background: rgba(255, 255, 255, 0.12);
-    backdrop-filter: blur(18.2px);
-    -webkit-backdrop-filter: blur(18.2px);
+    /* background: rgba(255, 255, 255, 0.12); */
+    /* backdrop-filter: blur(18.2px); */
+    /* -webkit-backdrop-filter: blur(18.2px); */
     border-radius: 16px;
-/* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); */
+    /* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); */
 /* border: 1px solid rgba(255, 255, 255, 0.3); */
 
     transform: translate3d(-50%,10%,0);
@@ -238,9 +238,9 @@ section{
     transform: translate3d(-50%,-100%,0);
     width: 85%;
     left: 50%;
-    background: rgba(255, 255, 255, 0.12);
+    /* background: rgba(255, 255, 255, 0.12);
     backdrop-filter: blur(18.2px);
-    -webkit-backdrop-filter: blur(18.2px);
+    -webkit-backdrop-filter: blur(18.2px); */
     /* background: rgba(255, 255, 255, 0.12); */
     border-radius: 16px;
     /* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); */
