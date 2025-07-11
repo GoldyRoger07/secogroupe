@@ -61,6 +61,7 @@ section{
     font-size: 50px;
     font-weight: bold;
     margin-bottom: 20px;
+    text-align: center;
     
 }
 
@@ -141,6 +142,7 @@ section{
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    padding: 20px 0;
 }
 
 #nos-avantages .titre-section{
@@ -180,17 +182,17 @@ section{
 }
 
 .carousel{
-    border-radius: 30px;
+    border-radius: 5px;
     overflow: hidden;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     /* max-height: 80vh; */
 }
 
 #contact{
-    height: 100dvh;
+    /* height: 100dvh; */
     padding: 20px 0px;
     position: relative;
-    overflow: hidden;
+    /* overflow: hidden; */
     /* background-image: linear-gradient(to right,#fff,#ff9); */
 }
 
@@ -486,6 +488,48 @@ form{
     /* background: violet; */
 }
 
+.contact-infos{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-infos a{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    color: #4e4e4e;
+    text-decoration: none;
+    position: relative;
+    padding: 10px;
+    padding-left: 20px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    transition: all ease-in 100ms;
+}
+
+.contact-infos a:hover{
+    color: #5fb1ff;
+    font-weight: bold;
+}
+
+.contact-infos a:hover i{
+    color: #5fb1ff !important;
+}
+
+
+
+.contact-infos a::before{
+    content: "";
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 4px;
+    height: 101%;
+    background: #5fb1ff;
+    
+}
+
 /* #contact .overlay{
     position: absolute;
     top: 0;
@@ -510,6 +554,17 @@ form{
     display: none;
   }
 } */
+
+.my-row{
+    display: flex;
+    gap: 20px;
+}
+
+.my-row .my-col{
+    flex-basis: 50%;
+}
+
+ 
 
 @media (min-width: 1200px) {
     .section-box{
@@ -544,9 +599,7 @@ form{
         width: 100%;
         text-align: center;
     }
-    .hero-box img{
-        display: none;
-    }
+    
 
     footer .box-1{
         flex-direction: column;
@@ -556,13 +609,23 @@ form{
 
 @media (max-width: 645px) {
     .hero-box .text-box h1{
-        font-size: 8vw;
+        font-size: 9vw;
     }
 
     .titre-section{
-        font-size: 30px;
+        font-size: 25px;
         margin-bottom: 20px;
     }
+
+    .hero-box .text-box p{
+        font-size: 15px;
+    }
+
+    .my-row{
+        
+        flex-direction: column-reverse;
+    }
+
 }
 
 @media (max-width: 550px) {
@@ -577,6 +640,10 @@ form{
 
     .hider.scroll-up,.hider.scroll-down{
         width: 95%;
+    }
+
+    footer .box-2{
+        font-size: small;
     }
 }
 
