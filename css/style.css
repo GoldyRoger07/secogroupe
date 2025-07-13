@@ -16,6 +16,7 @@ body{
     background-repeat: no-repeat; */
     background-color: #255c6d;
     height: 100dvh;
+    overflow-x: hidden;
 }
 
 header{
@@ -106,23 +107,69 @@ section{
 }
 
 #a-propos{
+    position: relative;
     /* background: #ececec; */
-    background-image: url('../img/image1.avif');
+    /* background-image: url('../img/image1.avif');
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    background-size: cover; */
+    min-height: 200vh;
+    overflow: hidden;
+}
+
+#a-propos .img-wrapper{
+    position: absolute;
+    /* display: block; */
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    /* overflow: hidden; */
+    /* object-fit: cover;
+    object-position: center; */
+    /* animation: zoom1 linear forwards;
+    animation-timeline: view(); */
+    /* animation-range-end: cover 50%;
+    animation-range-start: cover 0%; */
+    transform: scale(1);
+    animation: zoom1 linear forwards;
+    animation-timeline: view();
+    
+}
+
+.background-image{
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform-origin: center;
+    will-change: transform;
+    transition: transform 0.2s ease;
+}
+
+#a-propos .img-wrapper img{
+    width: 100%;  
+}
+
+
+@keyframes zoom1 {
+            
+    to{           
+        transform: scale(1.2);
+    }   
 }
 
 #a-propos .titre-section,#a-propos p{
     color: #fff;
 }
 
-#nos-avantages{
-    background-image: url('../img/bg.jpg');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
+/* #nos-avantages{
+   
+} */
 
 #nos-avantages .cards{
     padding: 0 50px;
@@ -138,15 +185,11 @@ section{
 }
 
 #nos-projets{
-    background-image: url('../img/bg.jpg');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
     padding: 20px 0;
 }
 
 #nos-avantages .titre-section{
-    margin-left: 50px;
+    text-align: center;
 }
 
 #nos-services{
@@ -162,6 +205,10 @@ section{
     width: 100%;
     height: 100%;
     background: #00000096;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
 }
 
 .my-card{
@@ -303,6 +350,7 @@ footer .box-2{
 footer .box-1 .links,footer .box-1 .locations{
     display: flex;
     flex-direction: column;
+    /* align-items: flex-start; */
     gap: 15px;
     
 }
@@ -371,6 +419,11 @@ footer .box-2{
     margin-right: 0px;
 } 
 
+/* .wrapper-link .links-animation{
+    text-align: start;
+    margin: 0;
+} */
+
 .wrapper-link .links-animation::after{
     position: absolute;
     content: "";
@@ -419,16 +472,18 @@ li.wrapper-link .links-animation::after{
 
 .zoom{
     transform: scale(1);
-    transition: transform ease-in-out 700ms;
+    animation: zoom1 linear forwards;
+    animation-timeline: view();
+    /* transition: transform ease-in-out 700ms; */
     /* object-position: center;
     object-fit: cover; */
 }
 
-.my-cards .card:hover .zoom{
+/* .my-cards .card:hover .zoom{
     transform: scale(1.2);
-    /* width: 100%; */
     
-}
+    
+} */
 
 .card-img-wrapper{
     width: 100%;
@@ -630,8 +685,10 @@ form{
 
 @media (max-width: 550px) {
     footer .box-1 .links-wrapper{
-        flex-direction: column;
-        gap: 30px;
+        /* flex-direction: column; */
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        gap: 20px;
     }
     
     .my-logo{

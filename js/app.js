@@ -17,6 +17,7 @@ AOS.init();
           if(currentScroll > lastScroll && !hider.classList.contains("scroll-down")){
             hider.classList.remove("scroll-up")
             hider.classList.add("scroll-down")
+            onClickLink()
           }
 
           if(currentScroll < lastScroll && hider.classList.contains("scroll-down")){

@@ -149,4 +149,22 @@
             }   
         }
 
+        .zoom{
+            animation: zoom linear;
+            animation-timeline: view();
+            animation-range-end: cover 50%;
+            animation-range-start: cover 0%;
+            /* transform: scale(1.); */
+        }
+
+        @keyframes zoom {
+            
+            to{
+               
+                transform: scale(1.3);
+            }   
+        }
+
+        
+
         
