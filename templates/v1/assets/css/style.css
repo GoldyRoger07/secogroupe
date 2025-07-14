@@ -34,3 +34,12 @@
 #a-tel:hover{
     color: #fff !important;
 }
+
+@media screen and (max-width: 990px) {
+    .theme-switch-wrapper{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+
