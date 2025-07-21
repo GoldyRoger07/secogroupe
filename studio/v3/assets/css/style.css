@@ -1,0 +1,227 @@
+.my-logo{
+    width: 90px;
+    /* background: #f52029; */
+}
+
+.my-footer-logo{
+    width: 200px;
+}
+
+.hider{
+    z-index: 9999 !important;
+    position: fixed !important;
+    top:0;
+    width: 100%;
+    left: 0;
+    transform: translateY(0);
+    /* transform: tr; */
+    transition: all 600ms ease-in-out;
+
+}
+
+.hider.scroll-up{
+    
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    /* background-color: #00000073; */
+    transform: translateY(0);
+}
+
+
+.hider.scroll-down{
+    transform: translateY(-100%);
+}
+
+#a-tel:hover{
+    color: #fff !important;
+}
+
+.service-card-container{
+    position: relative;
+}
+
+.services-cards-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    justify-content: center;
+    gap: 10px;
+}
+
+.service-card-container{
+    width: 100%;
+    height: 300px;
+}
+
+.service-card-container{
+    width: 100%;
+    height: 300px;
+    perspective: 1200px;
+}
+
+.service-card-container:hover > .service-card{
+    cursor: pointer;
+    transform: rotateY(180deg);
+}
+
+
+.service-card{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition: transform 800ms;
+    transform-style: preserve-3d;
+}
+
+
+
+
+.service-card .front,
+.service-card .back{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+
+.service-card .front{
+
+    /* background: #ff5e00; */
+    background-image: url(../images/new/bg_card_services_3.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center;
+    align-items: center; */
+    color: #fff;
+    /* gap: 20px; */
+}
+
+
+.service-card .back{
+    background: #434343;
+    transform: rotateY(180deg);
+    background-image: url(../images/new/bg_card_services_3.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: end;
+}
+
+.service-card .icon-box{
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.service-card .title-box{
+    height: 30%;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+}
+
+
+.service-card .front i{
+    font-size: 80px;
+    margin-top: 30px;
+    /* margin: auto; */
+   
+}
+
+.service-card .front span{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    /* margin-bottom: 50px; */
+}
+
+.service-card .back .overlay{
+    margin-top: auto;
+    background: #00000028;
+    /* background-image: linear-gradient(to top,#000000,transparent); */
+    color: #fff;
+    padding: 0 20px;
+    
+}
+
+.service-card .back .overlay .title{
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+
+.service-card .back .overlay p{
+    color: #fff;
+    font-size: 12px;
+    padding-bottom: 10px;
+}
+
+.w3l-footer{
+    position: relative !important;
+    overflow: hidden;
+    /* border: #ff5e00 5px solid; */
+}
+
+.call-us-box{
+    /* padding-right: 16px !important;
+    padding-left: 16px !important; */
+    /* width: 100%;
+    height: 300px; */
+    background-image: url(../images/new/SECO-Energy-Call-Us-footer.png) !important;
+    height: 80px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300%;
+    background-size:contain;
+    background-repeat: no-repeat;
+     /* transform: scale(2) translateY(30%,20%); */
+     
+    /*
+   
+   
+    
+    
+    background-image: url('../images/new/SECO-Energy-Call-Us-footer.png'); */
+}
+
+.copyright-footer{
+    background: #000;
+}
+
+.w3l-footer{
+    padding-bottom: 0 !important;
+}
+
+
+.loading-container{
+    height: 100vh;
+    width: 100%;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.loading-img{
+    width: 500px;
+    
+}
+
+@media screen and (max-width: 990px) {
+    .theme-switch-wrapper{
+        display: flex;
+        justify-content: center;
+    }
+}

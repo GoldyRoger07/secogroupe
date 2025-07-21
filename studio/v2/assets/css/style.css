@@ -1,0 +1,45 @@
+.my-logo{
+    width: 90px;
+    /* background: #f52029; */
+}
+
+.my-footer-logo{
+    width: 200px;
+}
+
+.hider{
+    z-index: 9999 !important;
+    position: fixed !important;
+    top:0;
+    width: 100%;
+    left: 0;
+    transform: translateY(0);
+    /* transform: tr; */
+    transition: all 600ms ease-in-out;
+
+}
+
+.hider.scroll-up{
+    
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    /* background-color: #00000073; */
+    transform: translateY(0);
+}
+
+
+.hider.scroll-down{
+    transform: translateY(-100%);
+}
+
+#a-tel:hover{
+    color: #fff !important;
+}
+
+@media screen and (max-width: 990px) {
+    .theme-switch-wrapper{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+

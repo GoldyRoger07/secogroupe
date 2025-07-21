@@ -17,7 +17,7 @@
           if(currentScroll > lastScroll && !hider.classList.contains("scroll-down")){
             hider.classList.remove("scroll-up")
             hider.classList.add("scroll-down")
-            onClickLink()
+            // onClickLink()
           }
 
           if(currentScroll < lastScroll && hider.classList.contains("scroll-down")){
