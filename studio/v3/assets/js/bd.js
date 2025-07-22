@@ -11,14 +11,8 @@ SERVICES["seco_tech"] = {
     description: `
     <p>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum aperiam eius tempora, necessitatibus quod, inventore soluta voluptate rerum obcaecati esse corrupti! Voluptatum magni quis et magnam atque optio, quos esse!
-    </p>
-    <p>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum aperiam eius tempora, necessitatibus quod, inventore soluta voluptate rerum obcaecati esse corrupti! Voluptatum magni quis et magnam atque optio, quos esse!
-    </p>
-    <p>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum aperiam eius tempora, necessitatibus quod, inventore soluta voluptate rerum obcaecati esse corrupti! Voluptatum magni quis et magnam atque optio, quos esse!
-    </p>
-    <p>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum aperiam eius tempora, necessitatibus quod, inventore soluta voluptate rerum obcaecati esse corrupti! Voluptatum magni quis et magnam atque optio, quos esse!
     </p>
     `,
@@ -28,16 +22,10 @@ SERVICES["seco_tech"] = {
 SERVICES["seco_distributors"] = {
     title: "Seco Distributors",
     description: `
-    <p>
+     <p>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum aperiam eius tempora, necessitatibus quod, inventore soluta voluptate rerum obcaecati esse corrupti! Voluptatum magni quis et magnam atque optio, quos esse!
-    </p>
-    <p>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum aperiam eius tempora, necessitatibus quod, inventore soluta voluptate rerum obcaecati esse corrupti! Voluptatum magni quis et magnam atque optio, quos esse!
-    </p>
-    <p>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum aperiam eius tempora, necessitatibus quod, inventore soluta voluptate rerum obcaecati esse corrupti! Voluptatum magni quis et magnam atque optio, quos esse!
-    </p>
-    <p>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum aperiam eius tempora, necessitatibus quod, inventore soluta voluptate rerum obcaecati esse corrupti! Voluptatum magni quis et magnam atque optio, quos esse!
     </p>
     `,
@@ -47,16 +35,10 @@ SERVICES["seco_distributors"] = {
 SERVICES["seco_agro_industries"] = {
     title: "Seco Agro-Industries",
     description: `
-    <p>
+     <p>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum aperiam eius tempora, necessitatibus quod, inventore soluta voluptate rerum obcaecati esse corrupti! Voluptatum magni quis et magnam atque optio, quos esse!
-    </p>
-    <p>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum aperiam eius tempora, necessitatibus quod, inventore soluta voluptate rerum obcaecati esse corrupti! Voluptatum magni quis et magnam atque optio, quos esse!
-    </p>
-    <p>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum aperiam eius tempora, necessitatibus quod, inventore soluta voluptate rerum obcaecati esse corrupti! Voluptatum magni quis et magnam atque optio, quos esse!
-    </p>
-    <p>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum aperiam eius tempora, necessitatibus quod, inventore soluta voluptate rerum obcaecati esse corrupti! Voluptatum magni quis et magnam atque optio, quos esse!
     </p>
     `,
@@ -67,16 +49,10 @@ SERVICES["seco_agro_industries"] = {
 SERVICES["seco_energy_co"] = {
     title: "Seco Energy CO",
     description: `
-    <p>
+     <p>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum aperiam eius tempora, necessitatibus quod, inventore soluta voluptate rerum obcaecati esse corrupti! Voluptatum magni quis et magnam atque optio, quos esse!
-    </p>
-    <p>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum aperiam eius tempora, necessitatibus quod, inventore soluta voluptate rerum obcaecati esse corrupti! Voluptatum magni quis et magnam atque optio, quos esse!
-    </p>
-    <p>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum aperiam eius tempora, necessitatibus quod, inventore soluta voluptate rerum obcaecati esse corrupti! Voluptatum magni quis et magnam atque optio, quos esse!
-    </p>
-    <p>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum aperiam eius tempora, necessitatibus quod, inventore soluta voluptate rerum obcaecati esse corrupti! Voluptatum magni quis et magnam atque optio, quos esse!
     </p>
     `,cover: "../images/new/bg_seco_energy_co.jpg"
@@ -85,21 +61,35 @@ SERVICES["seco_energy_co"] = {
 
 SERVICES["seco_univers_construction"] = {
     title: "Seco Univers Constructions",
-    description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum aperiam eius tempora, necessitatibus quod, inventore soluta voluptate rerum obcaecati esse corrupti! Voluptatum magni quis et magnam atque optio, quos esse!",
-    cover: "../images/new/bg_seco_univers_construction.jpg"
+    description: ` <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum aperiam eius tempora, necessitatibus quod, inventore soluta voluptate rerum obcaecati esse corrupti! Voluptatum magni quis et magnam atque optio, quos esse!
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum aperiam eius tempora, necessitatibus quod, inventore soluta voluptate rerum obcaecati esse corrupti! Voluptatum magni quis et magnam atque optio, quos esse!
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum aperiam eius tempora, necessitatibus quod, inventore soluta voluptate rerum obcaecati esse corrupti! Voluptatum magni quis et magnam atque optio, quos esse!
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum aperiam eius tempora, necessitatibus quod, inventore soluta voluptate rerum obcaecati esse corrupti! Voluptatum magni quis et magnam atque optio, quos esse!
+    </p>`,cover: "../images/new/bg_seco_univers_construction.jpg"
 
 }
 
 SERVICES["mass_assurances"] = {
     title: "Mass Assurances",
-    description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum aperiam eius tempora, necessitatibus quod, inventore soluta voluptate rerum obcaecati esse corrupti! Voluptatum magni quis et magnam atque optio, quos esse!",
-    cover: "../images/new/bg_mass_assurance.jpg"
+    description:` <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum aperiam eius tempora, necessitatibus quod, inventore soluta voluptate rerum obcaecati esse corrupti! Voluptatum magni quis et magnam atque optio, quos esse!
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum aperiam eius tempora, necessitatibus quod, inventore soluta voluptate rerum obcaecati esse corrupti! Voluptatum magni quis et magnam atque optio, quos esse!
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum aperiam eius tempora, necessitatibus quod, inventore soluta voluptate rerum obcaecati esse corrupti! Voluptatum magni quis et magnam atque optio, quos esse!
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum aperiam eius tempora, necessitatibus quod, inventore soluta voluptate rerum obcaecati esse corrupti! Voluptatum magni quis et magnam atque optio, quos esse!
+    </p>`,
+     cover: "../images/new/bg_mass_assurance.jpg"
 
 }
 
 SERVICES["mass_funds"] = {
     title: "Mass Funds",
-    description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum aperiam eius tempora, necessitatibus quod, inventore soluta voluptate rerum obcaecati esse corrupti! Voluptatum magni quis et magnam atque optio, quos esse!",
+    description:` <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum aperiam eius tempora, necessitatibus quod, inventore soluta voluptate rerum obcaecati esse corrupti! Voluptatum magni quis et magnam atque optio, quos esse!
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum aperiam eius tempora, necessitatibus quod, inventore soluta voluptate rerum obcaecati esse corrupti! Voluptatum magni quis et magnam atque optio, quos esse!
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum aperiam eius tempora, necessitatibus quod, inventore soluta voluptate rerum obcaecati esse corrupti! Voluptatum magni quis et magnam atque optio, quos esse!
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum aperiam eius tempora, necessitatibus quod, inventore soluta voluptate rerum obcaecati esse corrupti! Voluptatum magni quis et magnam atque optio, quos esse!
+    </p>`,
     cover: "../images/new/bg_mass_funds.jpg"
 
 }

@@ -4,31 +4,85 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<style>
-		.couche1 {
-			background: #cd942e;
-			position: absolute;
-			width: 300px;
-			height: 300px;
-			z-index: 1;
-			top: 100px;
-			left: 100px;
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			font-family: sans-serif;
+		}
+		body{
+			width: 100%;
+			height: 100vh;
+			display: flex;
+			align-items: end;
+			/* background: #000; */
+		}
+		.wrapper{
+			overflow: hidden;
+			height: 140px;
+			width: 100%;
+			position: relative;
+			
 		}
 
-		.couche2 {
-			background: rgba(0, 0, 255, 0.384);
-			position: absolute;
-			width: 300px;
-			height: 300px;
-			/* mix-blend-mode: multiply; */
-			z-index: 2;
+		.wrapper img{
+			width: 90%;
+			height: 100%;
+			transform: scaleX(3.5);
 		}
 
+		footer{
+			height: 60%;
+			background: #006fba;
+		}
+		footer .call-us{
+			position: absolute;
+			top: 0;
+			left: 0;
+			display: flex;
+			padding: 0 50px;
+			flex-direction: column;
+			justify-content: center;
+			/* align-items: center; */
+			/* border: 1px solid red; */
+			/* width: 100%; */
+			height: 100%;
+		}
+
+		footer .box{
+			display: flex;
+			align-items: center;
+			gap: 10px;
+		}
+
+		footer .title{
+			font-weight: bold;
+		}
+		footer .box:nth-child(2) span{
+			color: orange;
+			font-size: x-large;
+			font-weight: 800;
+		}
 	</style>
 	<title>Document</title>
 </head>
 <body>
-	<div class="couche1"></div>
-	<div class="couche2"></div>
+	<footer>
+		<div class="wrapper">
+			<img src="studio/v3/assets/images/new/SECO-Energy-Call-Us-footer.png" >
+			<div class="call-us">
+				<div class="box">
+					<span class="title">NEED HELP?</span>
+					<span class="number">CALL (352) 793 -3801</span>
+				</div>
+				<div class="box">
+					<span>CONTACT US</span>
+				</div>
+			</div>
+		</div>
 
+	</footer>
+	
+	
 </body>
 </html>

@@ -41,7 +41,7 @@
 
 .services-cards-container{
     display: grid;
-    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    grid-template-columns: repeat(auto-fill,minmax(280px,1fr));
     justify-content: center;
     gap: 10px;
 }
@@ -174,28 +174,40 @@
 .call-us-box{
     /* padding-right: 16px !important;
     padding-left: 16px !important; */
-    /* width: 100%;
-    height: 300px; */
+   
+    height: 6000px;
     background-image: url(../images/new/SECO-Energy-Call-Us-footer.png) !important;
-    height: 80px;
+    /* width: 1000px; */
     position: absolute;
     top: 0;
     left: 0;
-    width: 300%;
+    width: 100%;
     background-size:contain;
     background-repeat: no-repeat;
-     /* transform: scale(2) translateY(30%,20%); */
+     /* transform: scaleY(10) translateY(30%,20%); */
      
-    /*
-   
-   
-    
-    
+    /* 
     background-image: url('../images/new/SECO-Energy-Call-Us-footer.png'); */
 }
 
 .copyright-footer{
-    background: #000;
+    /* background: #ff6d06; */
+    background: #006ab1;
+    margin-top: 10px; 
+    /* color: #ff6d06!important; */
+    /* color: goldenrod; */
+    /* margin:0 40px;
+    */
+    /* border-top: 1px solid #00b8f0; */
+}
+
+/* .copyright-footer .container{
+    border-top: 1px solid #00b8f0;
+} */
+
+.copyright-footer p{
+    /* border-top: 1px solid #00b8f0; */
+    color: #fff;
 }
 
 .w3l-footer{
@@ -217,6 +229,60 @@
 .loading-img{
     width: 500px;
     
+}
+
+.wrapper-call-us{
+			overflow: hidden;
+			height: 140px;
+			width: 100%;
+			position: relative;
+			
+		}
+
+		.wrapper-call-us img{
+			width: 100%;
+			height: 100%;
+			transform: scaleX(3);
+		}
+
+		footer{
+			height: 60%;
+			background: #006fba;
+		}
+		footer .call-us{
+			position: absolute;
+			top: 0;
+			left: 0;
+			display: flex;
+			padding: 0 50px;
+			flex-direction: column;
+			justify-content: center;
+			/* align-items: center; */
+			/* border: 1px solid red; */
+			/* width: 100%; */
+			height: 100%;
+		}
+
+		footer .box{
+			display: flex;
+			align-items: center;
+			gap: 10px;
+		}
+
+		footer .title{
+			font-weight: bold;
+		}
+		footer .box:nth-child(2) span{
+			color: #ff6d06;
+            /* color: #006fba; */
+			font-size: x-large;
+			font-weight: 800;
+		}
+@media screen and (max-width: 1286px) {
+    .wrapper-call-us{
+        display: none;
+        
+    }
 }
 
 @media screen and (max-width: 990px) {
