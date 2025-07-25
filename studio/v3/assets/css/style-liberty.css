@@ -19329,6 +19329,15 @@ h5.small-title {
   color: #362a2b;
 }
 
+@media (min-width: 1080px){
+  
+  .slider{
+    width: 90%;
+    margin: 0 auto;
+
+  }
+}
+
 @media (max-width: 1400px) {
   .slide .content {
     left: -500px;
