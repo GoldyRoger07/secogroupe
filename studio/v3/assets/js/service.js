@@ -6,6 +6,8 @@ const serviceContainer = document.querySelector("#service-container")
 
 const serviceTitle = document.querySelector("#service-title")
 
+const bigServiceTitle = document.querySelector("#big-service-title")
+
 const titleServiceActive = document.querySelector("#title-service-active")
 
 const innerBanner = document.querySelector(".inner-banner")
@@ -30,4 +32,5 @@ document.documentElement.style.setProperty('--body-bg', `url(${SERVICES[serviceN
 
 
 serviceTitle.textContent = SERVICES[serviceName].title
-// titleServiceActive.textContent = SERVICES[serviceName].title
+titleServiceActive.textContent = SERVICES[serviceName].title
+bigServiceTitle.textContent = SERVICES[serviceName].title
