@@ -116,7 +116,9 @@
     background-size: cover;
     background-repeat: no-repeat; */
     display: flex;
-    align-items: end;
+    flex-direction: column;
+    /* align-items: end; */
+
 }
 
 .service-card .icon-box{
@@ -147,6 +149,26 @@
     text-align: center;
     /* margin-bottom: 50px; */
 }
+
+.service-card .back .top{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-image: url('https://www.google.com/url?sa=i&url=https%3A%2F%2Fht.linkedin.com%2Fcompany%2Fseco-s%25C3%25A9curit%25C3%25A9&psig=AOvVaw3EAatXyX30f2I0H3P01UFp&ust=1753562055501000&source=images&cd=vfe&opi=89978449&ved=0CBUQjRxqFwoTCLCYjvDt2I4DFQAAAAAdAAAAABAE'); */
+    /* background-image: url(../images/new/logo_seco_secu.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat; */
+}
+
+.service-card .back .top img{
+    /* background: red; */
+    width: 30%;
+}
+
+
 
 .service-card .back .overlay{
     margin-top: auto;

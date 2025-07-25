@@ -99,3 +99,15 @@ SERVICES["mass_funds"] = {
     cover: "../images/new/bg_mass_funds.jpg"
 
 }
+
+SERVICES["boyo_airways"] = {
+    title: "Boyo Airways",
+    description:` <p style="color: #000;">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum aperiam eius tempora, necessitatibus quod, inventore soluta voluptate rerum obcaecati esse corrupti! Voluptatum magni quis et magnam atque optio, quos esse!
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum aperiam eius tempora, necessitatibus quod, inventore soluta voluptate rerum obcaecati esse corrupti! Voluptatum magni quis et magnam atque optio, quos esse!
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum aperiam eius tempora, necessitatibus quod, inventore soluta voluptate rerum obcaecati esse corrupti! Voluptatum magni quis et magnam atque optio, quos esse!
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum aperiam eius tempora, necessitatibus quod, inventore soluta voluptate rerum obcaecati esse corrupti! Voluptatum magni quis et magnam atque optio, quos esse!
+    </p>`,
+    cover: "../images/new/bg_seco_boyo.avif"
+
+}
