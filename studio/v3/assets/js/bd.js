@@ -69,7 +69,9 @@ SERVICES["seco_univers_construction"] = {
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum aperiam eius tempora, necessitatibus quod, inventore soluta voluptate rerum obcaecati esse corrupti! Voluptatum magni quis et magnam atque optio, quos esse!
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum aperiam eius tempora, necessitatibus quod, inventore soluta voluptate rerum obcaecati esse corrupti! Voluptatum magni quis et magnam atque optio, quos esse!
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum aperiam eius tempora, necessitatibus quod, inventore soluta voluptate rerum obcaecati esse corrupti! Voluptatum magni quis et magnam atque optio, quos esse!
-    </p>`,cover: "https://plus.unsplash.com/premium_photo-1661962573121-d4c317caf908?q=80&w=1529&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    </p>`,
+    // cover: "https://plus.unsplash.com/premium_photo-1661962573121-d4c317caf908?q=80&w=1529&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    cover: "../images/new/bg_seco_univers_construction.jpg"
 
 }
 
