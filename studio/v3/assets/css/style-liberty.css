@@ -19189,7 +19189,7 @@ h5.small-title {
 .slider {
   position: relative;
   width: 100%;
-  min-height: 100vh;
+  min-height: 65vh;
   overflow: hidden;
 }
 
@@ -19214,10 +19214,10 @@ h5.small-title {
 }
 
 .bg-layer {
-  background: var(--layer);
+  /* background: var(--layer); */
   position: absolute;
   top: 0;
-  min-height: 100%;
+  /* min-height: 100%; */
   left: 0;
   right: 0;
 }
@@ -19269,19 +19269,19 @@ h5.small-title {
 }
 
 .slide:first-child {
-  background: url(../images/banner1.jpg) no-repeat center top/cover;
+  background: url(../images/banner1.jpg) no-repeat center bottom/cover;
 }
 
 .slide:nth-child(2) {
-  background: url(../images/banner2.jpg) no-repeat center top/cover;
+  background: url(../images/banner4.jpg) no-repeat center bottom/cover;
 }
 
 .slide:nth-child(3) {
-  background: url(../images/banner3.jpg) no-repeat center top/cover;
+  background: url(../images/banner3.jpg) no-repeat center bottom/cover;
 }
 
 .slide:nth-child(4) {
-  background: url(../images/banner4.jpg) no-repeat center top/cover;
+  background: url(../images/banner4.jpg) no-repeat center bottom/cover;
 }
 
 /* .slide:first-child {
