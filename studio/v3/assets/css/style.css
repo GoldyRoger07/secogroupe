@@ -50,11 +50,10 @@
     padding: 0 50px;
 }
 
-#site-header .container .line{
+#site-header {
     /* border-bottom: 1px solid #d6d6d6; */
-    width: 100%;
-    height: 1px;
-    box-shadow: rgba(0, 0, 0, 0.411) 0px 1.5px 4px;
+    
+   box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
 }
 
 
