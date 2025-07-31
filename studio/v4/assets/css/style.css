@@ -1,0 +1,361 @@
+.my-logo{
+    width: 60px;
+    /* background: #f52029; */
+}
+
+.my-footer-logo{
+    width: 150px;
+}
+
+.hider{
+    z-index: 9999 !important;
+    position: fixed !important;
+    top:0;
+    width: 100%;
+    left: 0;
+    transform: translateY(0);
+    /* transform: tr; */
+    transition: all 600ms ease-in-out;
+    /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+    /* box-shadow: rgba(251, 172, 25, 0.712) 0px 3px 8px; */
+    /* border-bottom: 1px solid #0d6efd; */
+    /* color: rgb(251, 173, 25); */
+}
+
+.hider.scroll-up{
+    
+    
+    /* background-color: #00000073; */
+    transform: translateY(0);
+}
+
+
+.hider.scroll-down{
+    transform: translateY(-100%);
+}
+
+#a-tel:hover{
+    color: #fff !important;
+}
+
+.service-card-container{
+    position: relative;
+}
+
+.services-cards-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(280px,1fr));
+    justify-content: center;
+    gap: 10px;
+    padding: 0 50px;
+}
+
+#site-header {
+    /* border-bottom: 1px solid #d6d6d6; */
+    
+   box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+}
+
+
+
+.service-card-container{
+    width: 100%;
+    height: 300px;
+    perspective: 1200px;
+}
+
+.service-card-container:hover > .service-card{
+    cursor: pointer;
+    transform: rotateY(180deg);
+}
+
+
+.service-card{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition: transform 800ms;
+    transform-style: preserve-3d;
+}
+
+
+
+
+.service-card .front,
+.service-card .back{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+
+.service-card .front{
+
+    background: #fbad19;
+    /* background-image: url(../images/new/bg_card_services_3.jpg); */
+    /* background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center;
+    align-items: center; */
+    color: #fff;
+    /* gap: 20px; */
+}
+
+
+.service-card .back{
+    /* background:#434343; */
+    background: #fbad19;
+    transform: rotateY(180deg);
+    /* background-image: url(../images/new/bg_card_services_3.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; */
+    display: flex;
+    flex-direction: column;
+    /* align-items: end; */
+
+}
+
+.service-card .icon-box{
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.service-card .title-box{
+    height: 30%;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+}
+
+
+.service-card .front i{
+    font-size: 80px;
+    margin-top: 30px;
+    /* margin: auto; */
+   
+}
+
+.service-card .front span{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    /* margin-bottom: 50px; */
+}
+
+.service-card .back .top{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-image: url('https://www.google.com/url?sa=i&url=https%3A%2F%2Fht.linkedin.com%2Fcompany%2Fseco-s%25C3%25A9curit%25C3%25A9&psig=AOvVaw3EAatXyX30f2I0H3P01UFp&ust=1753562055501000&source=images&cd=vfe&opi=89978449&ved=0CBUQjRxqFwoTCLCYjvDt2I4DFQAAAAAdAAAAABAE'); */
+    /* background-image: url(../images/new/logo_seco_secu.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat; */
+}
+
+.service-card .back .top img{
+    /* background: red; */
+    width: 30%;
+}
+
+
+
+.service-card .back .overlay{
+    margin-top: auto;
+    background: #00000028;
+    /* background-image: linear-gradient(to top,#000000,transparent); */
+    color: #fff;
+    padding: 0 20px;
+    
+}
+
+.service-card .back .overlay .title{
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+
+.service-card .back .overlay p{
+    color: #fff;
+    font-size: 12px;
+    padding-bottom: 10px;
+}
+
+.w3l-footer{
+    position: relative !important;
+    overflow: hidden;
+    /* border: #ff5e00 5px solid; */
+}
+
+.call-us-box{
+    /* padding-right: 16px !important;
+    padding-left: 16px !important; */
+   
+    height: 6000px;
+    /* background-image: url(../img/SECO-Energy-Call-Us-footer.png) !important; */
+    /* width: 1000px; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-size:contain;
+    background-repeat: no-repeat;
+     /* transform: scaleY(10) translateY(30%,20%); */
+     
+    /* 
+    background-image: url('../images/new/SECO-Energy-Call-Us-footer.png'); */
+}
+
+.copyright-footer{
+    /* background: #ff6d06; */
+    background: #006ab1;
+    margin-top: 10px; 
+    /* color: #ff6d06!important; */
+    /* color: goldenrod; */
+    /* margin:0 40px;
+    */
+    /* border-top: 1px solid #00b8f0; */
+}
+
+/* .copyright-footer .container{
+    border-top: 1px solid #00b8f0;
+} */
+
+.copyright-footer p{
+    /* border-top: 1px solid #00b8f0; */
+    color: #fff;
+}
+
+.w3l-footer{
+    padding-bottom: 0 !important;
+}
+
+
+.loading-container{
+    height: 100vh;
+    width: 100%;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 
+.loading-img{
+    width: 500px;
+    
+} */
+
+.wrapper-call-us{
+			overflow: hidden;
+			height: 140px;
+			width: 100%;
+			position: relative;
+			
+		}
+
+		.wrapper-call-us img{
+			width: 100%;
+			height: 100%;
+			transform: scaleX(3);
+		}
+
+		footer{
+			height: 60%;
+			background: #006fba;
+		}
+		footer .call-us{
+			position: absolute;
+			top: 0;
+			left: 0;
+			display: flex;
+			padding: 0 50px;
+			flex-direction: column;
+			justify-content: center;
+			/* align-items: center; */
+			/* border: 1px solid red; */
+			/* width: 100%; */
+			height: 100%;
+		}
+
+		footer .box{
+			display: flex;
+			align-items: center;
+			gap: 10px;
+		}
+
+		footer .title{
+			font-weight: bold;
+		}
+		footer .box:nth-child(2) span{
+            color: #fbad19;
+			/* color: #ff6d06; */
+            /* color: #006fba; */
+			font-size: x-large;
+			font-weight: 800;
+		}
+
+
+.text-box{
+    /* background: var(--bs-primary); */
+    min-width: 40%;
+    padding: 10px;
+    color: #000;
+    margin: 10px 0;
+    font-weight: bold;
+    /* border: 2px solid red; */
+
+}
+
+.marquee-container {
+  overflow: hidden;
+  white-space: nowrap;
+  box-sizing: border-box;
+}
+
+.marquee {
+  display: inline-block;
+  padding-left: 100%;
+  animation: marquee 15s linear infinite;
+}
+
+@keyframes marquee {
+  0%   { transform: translateX(0%); }
+  100% { transform: translateX(-100%); }
+}
+
+
+@keyframes txt-move {
+    to{
+
+    }
+}
+
+@media screen and (max-width: 1286px) {
+    .wrapper-call-us{
+        display: none;
+        
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .theme-switch-wrapper{
+        display: flex;
+        justify-content: center;
+    }
+}

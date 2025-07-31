@@ -14,75 +14,107 @@
 			width: 100%;
 			height: 100vh;
 			display: flex;
-			align-items: end;
+			place-content: center;
+			place-items: center;
 			/* background: #000; */
 		}
-		.wrapper-call-us{
-			overflow: hidden;
-			height: 140px;
-			width: 100%;
+
+		.card1{
+			width: 190px;
+			height: 254px;
+			background: #fff;
 			position: relative;
+			display: flex;
+			place-content: center;
+			place-items: center;
+			overflow: hidden;
+			border-radius: 20px;
+			transition: all 0.3s linear;
+			border: 1px solid #c0c0c0;
+			/* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+		}
+
+		.card1:hover{
+			border-color: transparent;
+			box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+		}
+
+		.card1:active{
+			border-color: #c0c0c0;
+			box-shadow: none;
+		}
+
+		.card1:hover .card-body{
+			/* border-color: transparent; */
+		}
+
+		.card1 h4{
+			/* z-index: 1; */
+			color: rgb(54, 54, 54);
+			
+			
+
+		}
+
+		.card1::before{
+			content: '';
+			position: absolute;
+			width: 100px;
+			animation: spinCard 3s linear infinite;
+			transition: all 0.2s linear;
+			background-image: linear-gradient(180deg,#1a5cf1,#fbad19);
+			height: 130%;
 			
 		}
 
-		.wrapper-call-us img{
-			width: 90%;
-			height: 100%;
-			transform: scaleX(3.5);
-		}
-
-		footer{
-			height: 60%;
-			background: #006fba;
-		}
-		footer .call-us{
+		.card-body{
 			position: absolute;
-			top: 0;
-			left: 0;
+			background: #fff;
+			inset: 5px;
+			border-radius: 15px;
 			display: flex;
-			padding: 0 50px;
-			flex-direction: column;
-			justify-content: center;
-			/* align-items: center; */
-			/* border: 1px solid red; */
-			/* width: 100%; */
-			height: 100%;
+			place-content: center;
+			place-items: center;
+			border: 1px solid #c0c0c0;
 		}
 
-		footer .box{
-			display: flex;
-			align-items: center;
-			gap: 10px;
+		.card1:hover::before{
+			
+			
 		}
 
-		footer .title{
-			font-weight: bold;
+		@keyframes spinCard {
+			from{
+				transform: rotate(0deg);
+
+			}
+			to{
+				transform: rotate(360deg);
+			}
 		}
-		footer .box:nth-child(2) span{
-			color: orange;
-			font-size: x-large;
-			font-weight: 800;
-		}
+
+		
+		
 	</style>
+	<link href="//fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/style-liberty.css">
 	<title>Document</title>
 </head>
 <body>
-	<footer>
-		<div class="wrapper">
-			<img src="studio/v3/assets/images/new/SECO-Energy-Call-Us-footer.png" >
-			<div class="call-us">
-				<div class="box">
-					<span class="title">NEED HELP?</span>
-					<span class="number">CALL (352) 793 -3801</span>
-				</div>
-				<div class="box">
-					<span>CONTACT US</span>
-				</div>
-			</div>
-		</div>
+	
+	<div class="card">
+		<div class="card-body">
+			<div class="d-block">
+                            <i class="fas fa-business-time"></i>
+                            <h3 class="mt-3 mb-2">Étude de marché</h3>
+                            <p>Nous analysons votre marché pour vous aider à mieux comprendre vos clients et identifier les opportunités stratégiques.</p>
+            </div>
 
-	</footer>
+		</div>
+	</div>
 	
-	
+	<script src="assets/js/bootstrap.min.js"></script>
+
 </body>
 </html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Seco Groupe</title>
+</head>
+<body>
+    <header class="py-2" style="box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;">
+        <div class="mx-auto flex justify-between  h-16 max-w-screen-lg items-center gap-8 px-4 sm:px-6 lg:px-8">
+            <a class="block text-teal-600" href="#">
+                <img src="assets/img/logo-c.png" class="w-[70px]">
+            </a>
+
+            <div class="flex items-center justify-between">
+                <nav aria-label="Global" class="hidden md:block">
+                    <ul class="flex items-center gap-6 text-sm">
+                        <li>
+                            <a class="text-gray-500 transition hover:text-[#1a5cf1] font-bold" href="#"> Accueil </a>
+                        </li>
+
+                        <li>
+                            <a class="text-gray-500 transition hover:text-[#1a5cf1] font-bold" href="#"> A Propos </a>
+                        </li>
+
+                
+
+                        <li>
+                            <a class="text-gray-500 transition hover:text-[#1a5cf1] font-bold" href="#"> Filiales </a>
+                        </li>
+
+                        <li>
+                            <a class="text-gray-500 transition hover:text-[#1a5cf1] font-bold" href="#"> Contact </a>
+                        </li>
+
+                    </ul>
+                </nav>
+
+                
+            </div>
+        </div>
+    </header>
+
+   <!-- Slider main container -->
+    <section>
+        <div class="swiper max-w-screen-lg">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+            <img src="assets/img/composite-image-of-rear-view-of-security-officer-talking-on-walkie-talkie.jpg" alt="Slide">
+        </div>
+        <div class="swiper-slide">
+            <img src="assets/img/composite-image-of-rear-view-of-security-officer-talking-on-walkie-talkie.jpg" alt="Slide">
+        </div>
+        <div class="swiper-slide">
+            <img src="assets/img/composite-image-of-rear-view-of-security-officer-talking-on-walkie-talkie.jpg" alt="Slide">
+        </div>
+        
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+
+    <!-- If we need scrollbar -->
+    <div class="swiper-scrollbar"></div>
+        </div>
+    </section>
+
+
+    <footer class="bg-[#1a5cf1] mt-auto  relative overflow-x-hidden">
+        <div class="wrapper-call-us">
+			<img src="assets/img/SECO-Energy-Call-Us-footer1.png" >
+			<div class="call-us">
+				<div class="box">
+					<span class="title">BESOIN D'AIDE ?</span>
+					<span class="number">APPELEZ AU (509) 2940-0349</span>
+				</div>
+				<div class="box">
+					<span>CONTACTEZ NOUS</span>
+				</div>
+			</div>
+		</div>
+        <div class="flex flex-col text-white">
+            <div class="mx-auto w-full max-w-screen-lg pt-5">
+                <div class="grid grid-cols-[repeat(3,1fr)] gap-5">
+                    <div>
+                        <img class="w-[120px]" src="assets/img/logo-c.png" alt="logo">
+                        <p>Des solutions sur mesure pour vos divers besoins.</p>
+                    </div>
+                    <div class="flex flex-col gap-2">
+                        <span class="underline font-bold text-[20px] uppercase">A Propos</span>
+                        <p>Depuis plus de 30 ans, notre entreprise accompagne particuliers et professionnels avec des services sur mesure, fiables et innovants. Notre engagement : offrir des solutions de qualité qui répondent réellement à vos besoins.</p>
+                        <ul class="flex py-2 gap-5 items-center">
+                            <li><a href="#facebook"><span class="fab fa-facebook-f"></span></a></li>
+                            <li><a href="#twitter"><span class="fab fa-twitter"></span></a></li>
+                            <li><a href="#linkedin"><span class="fab fa-linkedin-in"></span></a></li>
+                            <li><a href="#google-plus"><span class="fab fa-google-plus-g"></span></a></li>
+                            <li><a href="#instagram"><span class="fab fa-instagram"></span></a></li>
+                        </ul>
+                    </div>
+                    <div class="flex flex-col gap-3">
+                        <span class="underline font-bold text-[20px] uppercase">Contact</span>
+                        <div class="flex items-center gap-2">
+                            <span class="fas fa-envelope-open"></span>
+                            <a href="/cdn-cgi/l/email-protection#93fafdf5fcd3f6ebf2fee3fff6bdf0fcfe"><span class="__cf_email__" data-cfemail="f29b9c949db2978a939f829e97dc919d9f">hr@secogroupe.com</span></a>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <span class="fas fa-phone-alt"></span>
+                            <a href="tel:+509-2940-0349" id="a-tel">+509 2940 0349 / 2940 0339</a>
+                        </div>
+                        <div>
+                            <p class="contact-para mb-3"><span class="fas fa-map-marker-alt mr-2"></span>
+                                Rue Borno #12 Bis,
+                                Pv-Haiti</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="w-full bg-[#1853dd] mx-auto text-center py-4">
+                        &copy; 2023 Seco Groupe. All rights reserved.
+            </div>
+        </div>
+    </footer>
+    <script src="https://kit.fontawesome.com/a2c421da17.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+        // Optional parameters
+        direction: 'horizontal',
+        loop: true,
+
+        // If we need pagination
+        // pagination: {
+        //     el: '.swiper-pagination',
+        // },
+
+        // Navigation arrows
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+
+        // And if we need scrollbar
+        // scrollbar: {
+        //     el: '.swiper-scrollbar',
+        // },
+        });
+
+    </script>
+    
+</body>
+</html>
